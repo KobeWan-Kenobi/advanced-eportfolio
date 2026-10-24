@@ -28,9 +28,24 @@ section {
   color: #00a108;
 }
 
+button {
+  cursor: pointer;
+}
+.click-hover-effect {
+  transition: all 200ms ease;
+}
+
+.click-hover-effect:hover {
+  transform: scale(1.2);
+}
+
+.click-hover-effect:active {
+  transform: scale(0.8);
+}
 /* LANDING PAGE */
 #landing-page {
   min-height: 100vh;
+  position: relative;
 }
 
 header {
@@ -40,6 +55,7 @@ header {
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 1000px;
+  padding: 0 32px;
 }
 
 .header__paragraph {
@@ -47,7 +63,86 @@ header {
   line-height: 2;
   max-width: 500px;
 }
+/* 
 
+1. MARGINS AND PADDINGS INCREMENT BY 8PX
+2. FONT-SIZES INCREMENT BY 2PX
+
+*/
+.social__list {
+  margin-top: 16px;
+  display: flex;
+}
+
+.social {
+  background-color: #00a108;
+  color: white;
+  padding: 6px;
+  font-size: 20px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.mail__btn {
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+  border-radius: 50%;
+  border: none;
+  background-color: #242424;
+  color: white;
+  position: absolute;
+  bottom: 32px;
+  right: 40px;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll__icon {
+  width: 20px;
+  height: 30px;
+  border: 2px solid #242424;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 200ms ease;
+}
+.scroll__icon:hover {
+  background-color: #242424;
+  transition: background-color 200ms ease;
+}
+.scroll__icon:after {
+  content: "";
+  width: 4px;
+  height: 6px;
+  background-color: #242424;
+  transition: background-color 200ms ease;
+
+  animation: scroll 1000ms infinite alternate-reverse;
+}
+
+.scroll__icon:hover:after {
+  background-color: white;
+  transition: background-color 200ms ease;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
 /* NAVIGATION */
 
 #personal-logo {
@@ -64,6 +159,7 @@ nav {
   width: 100%;
   margin: 0 auto;
   height: 100px;
+  padding: 0 20px;
 }
 
 .nav__link--list {
