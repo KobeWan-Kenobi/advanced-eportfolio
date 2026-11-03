@@ -19,7 +19,29 @@ p {
 section {
   background-color: rgb(245, 245, 245);
 }
+input,
+textarea {
+  width: 100%;
+  background-color: #242424;
+  color: #fff;
+  outline: none;
+  border: 2px solid #c0c4cc;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 40px;
+  margin-bottom: 12px;
+}
 
+textarea {
+  resize: vertical;
+  height: 100px;
+  margin-top: 8px;
+}
+label {
+  padding: 14px 0;
+  font-weight: bold;
+}
 .container {
   padding: 48px 0;
   width: 100%;
@@ -282,6 +304,7 @@ nav {
   transition: transform 300ms ease;
 }
 .modal__contact {
+  padding: 40px 72px;
   background-color: #242424;
   color: white;
 }
@@ -298,6 +321,9 @@ nav {
 .modal__paragraph {
   margin-bottom: 12px;
   line-height: 1.75;
+}
+
+.form__item {
 }
 /* PROJECTS */
 .project__img {
