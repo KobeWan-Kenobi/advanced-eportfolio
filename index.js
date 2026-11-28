@@ -25,3 +25,15 @@ function contact(event) {
       );
     });
 }
+
+let isModalOpen = false;
+function toggleModal(){
+  if(!isModalOpen){
+  document.body.classList += " modal--open";
+  isModalOpen = true;
+  }
+  else{
+    document.body.classList.remove("modal--open");
+    isModalOpen = false;
+  }
+}
