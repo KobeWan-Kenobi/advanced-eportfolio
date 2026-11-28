@@ -43,10 +43,11 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
-              href=""
+              href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              
               >Contact</a
             >
           </li>
@@ -65,7 +66,7 @@
             special interest in building secure websites with exceptional user
             experiences.
             <br />
-            Here's a bit more <b class="green">about me.</b>
+            Here's a bit more <b class="green click-hover-effect" onclick="toggleModal()">about me.</b>
           </p>
           <div class="social__list">
             <a href="" class="social click-hover-effect"
@@ -80,7 +81,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click-hover-effect">
+      <button class="mail__btn click-hover-effect" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -136,6 +137,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+                  <i class="fa-solid fa-xmark modal__exit click-hover-effect" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">Let's have a chat</h3>
 
           <h3 class="modal__sub-title modal__title--contact">
@@ -170,7 +172,6 @@
             Thanks for the message! Looking forward to speaking with you soon.
           </div>
         </div>
-        <i class="fa-solid fa-xmark modal__exit click-hover-effect"></i>
       </div>
     </section>
     <section id="projects">
