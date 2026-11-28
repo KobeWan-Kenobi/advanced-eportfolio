@@ -47,12 +47,11 @@
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              
               >Contact</a
             >
           </li>
           <!-- REMINDER TO CHANGE MOON ANIMATION TO 180DEG CLOCKWISE + INVERT COLOR -->
-          <li class="nav__link click-hover-effect">
+          <li class="nav__link click-hover-effect" onclick="toggleContrast()">
             <i class="fa-solid fa-circle-half-stroke"></i>
           </li>
         </ul>
@@ -66,7 +65,10 @@
             special interest in building secure websites with exceptional user
             experiences.
             <br />
-            Here's a bit more <b class="green click-hover-effect" onclick="toggleModal()">about me.</b>
+            Here's a bit more
+            <b class="green click-hover-effect" onclick="toggleModal()"
+              >about me.</b
+            >
           </p>
           <div class="social__list">
             <a href="" class="social click-hover-effect"
@@ -137,7 +139,10 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
-                  <i class="fa-solid fa-xmark modal__exit click-hover-effect" onclick="toggleModal()"></i>
+          <i
+            class="fa-solid fa-xmark modal__exit click-hover-effect"
+            onclick="toggleModal()"
+          ></i>
           <h3 class="modal__title modal__title--contact">Let's have a chat</h3>
 
           <h3 class="modal__sub-title modal__title--contact">

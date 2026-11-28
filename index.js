@@ -1,6 +1,16 @@
 // template_mhhjvjf
 // service_mtgvqk9
 // frL6xIaCPC2JJrlCK
+let isModalOpen = false;
+let darkTheme = false;
+function toggleContrast() {
+  darkTheme = !darkTheme;
+  if (darkTheme) {
+    document.body.classList += " dark-theme";
+  } else {
+    document.body.classList.remove("dark-theme");
+  }
+}
 function contact(event) {
   event.preventDefault();
   const loading = document.querySelector(".modal__overlay--loading");
@@ -26,13 +36,11 @@ function contact(event) {
     });
 }
 
-let isModalOpen = false;
-function toggleModal(){
-  if(!isModalOpen){
-  document.body.classList += " modal--open";
-  isModalOpen = true;
-  }
-  else{
+function toggleModal() {
+  if (!isModalOpen) {
+    document.body.classList += " modal--open";
+    isModalOpen = true;
+  } else {
     document.body.classList.remove("modal--open");
     isModalOpen = false;
   }
